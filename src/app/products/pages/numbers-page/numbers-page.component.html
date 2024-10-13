@@ -1,1 +1,29 @@
-<p>numbers-page works!</p>
+<p-panel header="Pipes Numericos" class="p-1">
+    <p>
+      Pipes incluidos en Angular - usualmente en el Common Module
+    </p>
+  </p-panel>
+  
+  <div class="grid mt-2">
+    <div class="col-12 md:col-4">
+      <p-card header="ventas Netas" subheader="del año">
+        {{totalSells + 1235 | number: "1.2-2"}}
+      </p-card>
+    </div>
+
+    <div class="col-12 md:col-4">
+        <p-card header="ventas Brutas" subheader="del año">
+          {{totalSells | currency: "ARS":"symbol-narrow"}}
+        </p-card>
+      </div>
+    
+  
+      <div class="col-12 md:col-4">
+        <p-card header="ganancia porcentual" subheader="del año">
+          {{percent | percent: "1.2-2"}}
+        </p-card>
+      </div>
+  
+  
+  
+  </div>

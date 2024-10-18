@@ -39,8 +39,9 @@ export class MenuComponent {
           label: "pipes personalizados",
           icon: "pi pi-cog",
           items: [{
-            label: "otro alemento",
-            icon: "pi pi-cog"
+            label: "CustomPipes",
+            icon: "pi pi-cog",
+            url: "custom"
           }]
         }
       ]
